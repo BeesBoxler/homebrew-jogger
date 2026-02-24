@@ -12,4 +12,10 @@ cask "jogger-macos" do
   homepage "https://github.com/BeesBoxler/jogger"
 
   app "Jogger.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+      args: ["-dr", "com.apple.quarantine", "#{appdir}/Jogger.app"],
+      sudo: false
+  end
 end
