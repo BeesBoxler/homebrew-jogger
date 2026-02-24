@@ -5,7 +5,7 @@ cask "jogger-macos" do
 
   sha256 arm: "ce35327b4b5a9311331c64606af1535c505706e072eece84ea36a19fc3febc9c", intel: "05fb329bd256ab709d898ca5ae96a625995fa0f83305a1804834282fa72cab88"
 
-  url "https://github.com/BeesBoxler/jogger/releases/download/v#{version}/jogger-macos-#{arch}-apple-darwin.zip"
+  url "https://github.com/BeesBoxler/jogger/releases/download/v#{version.before_comma}/jogger-macos-#{arch}-apple-darwin.zip"
   name "Jogger"
   desc "Simple Jira time logger"
   homepage "https://github.com/BeesBoxler/jogger"
