@@ -35,8 +35,7 @@ cask "jogger-macos" do
 
   arch arm: "aarch64", intel: "x86_64"
 
-  sha256 arm: "${SHA_ARM}"
-  sha256 intel: "${SHA_INTEL}"
+  sha256 arm: "${SHA_ARM}", intel: "${SHA_INTEL}"
 
   url "https://github.com/${OWNER}/${REPO}/releases/download/v#{version}/jogger-macos-#{arch}-apple-darwin.zip"
   name "Jogger"
