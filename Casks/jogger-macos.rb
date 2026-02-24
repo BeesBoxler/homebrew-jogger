@@ -1,9 +1,9 @@
 cask "jogger-macos" do
-  version "0.3.5"
+  version "0.3.5,1"
 
   arch arm: "aarch64", intel: "x86_64"
 
-  sha256 arm: "ce35327b4b5a9311331c64606af1535c505706e072eece84ea36a19fc3febc9c", intel: "05fb329bd256ab709d898ca5ae96a625995fa0f83305a1804834282fa72cab88"
+  sha256 arm: "74e95381fb5e6d1d79cad5c0dcd7dc5df078be160a53c99ac252dac388418155", intel: "cec352ea39b72da750f2cca93b9ba1db6c1f9be66a553d0cc7df8eca69991a51"
 
   url "https://github.com/BeesBoxler/jogger/releases/download/v#{version.before_comma}/jogger-macos-#{arch}-apple-darwin.zip"
   name "Jogger"
